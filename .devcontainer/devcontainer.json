@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.140.1/containers/jekyll
+{
+	"name": "Jekyll (Community)",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"NODE_VERSION": "lts/*"
+		}
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"anseki.vscode-color",
+		"davidanson.vscode-markdownlint",
+		"esbenp.prettier-vscode",
+		"ginfuru.ginfuru-vscode-jekyll-syntax",
+		"kisstkondoros.vscode-gutter-preview"
+		"mhutchie.git-graph",
+		"oderwat.indent-rainbow",
+		"sissel.shopify-liquid",
+		"stkb.rewrap",
+		"tyriar.lorem-ipsum",
+		"vmsynkov.colonize",
+		"yzhang.markdown-all-in-one",
+	],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		4000
+	],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "jekyll serve",
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}
